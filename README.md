@@ -324,7 +324,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 1. Check the [documentation](docs/)
-2. Search existing [issues](https://github.com/your-username/ideas-tracker/issues)
+2. Search existing [issues](https://github.com/yamamushi/ideas-tracker/issues)
 3. Create a new issue with detailed information
 
 ---
