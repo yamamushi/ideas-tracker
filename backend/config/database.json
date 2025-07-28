@@ -1,0 +1,5 @@
+{
+  "type": "sqlite",
+  "database": "./data/ideas_tracker.db",
+  "readonly": false
+}

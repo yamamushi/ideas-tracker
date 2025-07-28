@@ -1,0 +1,63 @@
+{
+  "name": "ideas-tracker",
+  "version": "1.0.0",
+  "description": "A modern web application for collecting, organizing, and voting on innovative ideas",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./scripts/setup.sh",
+    "dev": "./scripts/dev.sh",
+    "start": "./scripts/prod.sh",
+    "test": "./scripts/test.sh",
+    "test:coverage": "./scripts/test.sh --coverage",
+    "test:watch": "./scripts/test.sh --watch",
+    "test:backend": "./scripts/test.sh --suite backend",
+    "test:frontend": "./scripts/test.sh --suite frontend",
+    "test:e2e": "./scripts/test.sh --suite e2e",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "clean": "rm -rf backend/dist frontend/dist backend/node_modules frontend/node_modules node_modules",
+    "docker:dev": "docker-compose up -d",
+    "docker:prod": "docker-compose -f docker-compose.prod.yml up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "format": "npm run format:backend && npm run format:frontend",
+    "format:backend": "cd backend && npm run format",
+    "format:frontend": "cd frontend && npm run format"
+  },
+  "keywords": [
+    "ideas",
+    "tracker",
+    "voting",
+    "collaboration",
+    "innovation",
+    "react",
+    "nodejs",
+    "postgresql"
+  ],
+  "author": "Ideas Tracker Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ideas-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ideas-tracker/issues"
+  },
+  "homepage": "https://github.com/your-username/ideas-tracker#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
